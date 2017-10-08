@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Records</title>
+          <link rel="stylesheet" href="attendance.css">
+     </head>
+     <body>
+          <div id="record">
+               <% record.forEach(function(record){ %>
+                    <img src="<%= record.passport %>"><br>
+                    <span>First Name: </span><%= record.firstName %><br>
+                    <span>Last Name: </span><%= record.lastName %><br>
+                    <span>Other Names: </span><%= record.otherNames %><br>
+                    <span>Class: </span><%= record.clas %><br>
+                    <span>Why I am here: </span><br><%= record.info %><br>
+                    <hr>
+               <% }); %>
+               
+          </div>
+     </body>
+</html>

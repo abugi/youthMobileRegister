@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Attendance Register</title>
+          <link rel="stylesheet" href="attendance.css">
+     </head>
+     <body>
+          <section>
+               <h1>Welcome to Youth Mobile Naija</h1>
+               <p>We congatulate you on your success through the screening phase.</p>
+               <p>Please fill out the form below to enroll.</p>
+          </section>
+          
+
+          <div id="form">
+               <form action="/post" method="POST">
+                    <div>
+                         <label for="fn">First Name: </label>
+                         <input type="text" name="fn">
+                    </div>
+                    <div>
+                         <label for="ln">Last Name: </label>
+                         <input type="text" name="ln">
+                    </div>
+                    <div>
+                         <label for="on">Other Names: </label>
+                         <input type="text" name="on">
+                    </div>
+                    <div>
+                         <label for="clas">Class: </label>
+                         <span id="hardware">Hardware</span>
+                         <input type="radio" name="clas" value="hardware">
+                         <span id="software">Software</span>
+                         <input type="radio" name="clas" value="software">
+                    </div>
+                    <div>
+                         <label for="image">Passport: </label>
+                         <input type="text" name="image">
+                    </div>
+                    <div>
+                         <label for="info"></label>
+                         <textarea name="info" cols="30" rows="5" placeholder="tell us why you are here..."></textarea>
+                    </div>
+                    <input type="submit" value="Submit Form">
+               </form>
+          </div>
+
+          <!-- <script type="text/javascript" src="attendance.js"></script> -->
+     </body>
+</html>
