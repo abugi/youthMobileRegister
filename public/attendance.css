@@ -109,4 +109,12 @@ hr{
           border: none;
           text-align: center;
      }
+     #record img{
+          width: 20%;
+          height: 20%;
+          margin-bottom: 2%;
+     }
+     #record span{
+          font-weight: bold;
+     }
 }
