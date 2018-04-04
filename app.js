@@ -3,12 +3,12 @@ const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-// const promise = mongoose.connect('mongodb://localhost/attendance', {
-//      useMongoClient: true,
-//    });
-const promise = mongoose.connect("mongodb://abugi:jankara@ds115035.mlab.com:15035/youth_mobile_register", {
-  useMongoClient: true,
-});
+const promise = mongoose.connect('mongodb://localhost/attendance', {
+     useMongoClient: true,
+   });
+// const promise = mongoose.connect("mongodb://abugi:jankara@ds115035.mlab.com:15035/youth_mobile_register", {
+//   useMongoClient: true,
+// });
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
